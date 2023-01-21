@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200;1,500&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.navbar {
+    background-color: #84b6f4 !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.navbar a {
+    color: #fff !important;
+    padding-left: 5px !important;
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.inicio {
+    background-color: #ebf4ff;
+}
+
+.sonrisa_turnos {
+    padding: 10px 30px;
+    margin: 20px;
+}
+
+.inicio-info {
+    padding: 20px 25px;
+    text-align: center;
+}
+
+.inicio-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #143052;
+    padding-bottom: 5px;
+}
+
+.inicio-info p {
+    font-size: 22px;
+}
+
+.inicio-info h3 {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #2171d1;
+    padding-bottom: 15px;
+}
+
+.botonTurno {
+    background-color: #61a2f2 !important;
+    font-size: 22px !important;
+    --font-weight: bold;
+}
+
+
+/* .inicio {
+    background-color: #ebf4ff;
+    margin: 0px;
+    padding: 90px;
+}
+
+.inicio h2 {
+    font-size: 44px;
+}
+
+.inicio p {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.inicio h3 {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.inicio img {
+    width: 350px;
+    height: auto;
+}
+
+.inicio-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonTurno {
+    margin-top: 80px;
+    margin-left: 260px;
+    padding: 10px;
+    background-color: #3da691;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+} */
+
+.footer-container {
+    width: 100%;
+    background: #3f485b;
+}
+
+.footer-container .content-footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+}
+
+.footer-container .content-footer .box h2 {
+    color: #84e9f4;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.footer-container .content-footer .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.footer-container .content-footer .box a {
+    display: block;
+    color: #ccc;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.footer-container .content-footer .box .email_contacto {
+    font-size: 16px;
+}
+
+.footer-container .content-footer .box .social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container .content-footer .box .social-links img {
+    height: 50px;
+    width: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer-container .content-footer {
+        width: 100%;
+        max-width: 1200px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+    .footer-container .content-footer .box a:hover {
+        color: #f2c640;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer-container .content-footer {
+        width: 95%;
+        max-width: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .footer-container .content-footer {
+        width: 90%;
+        max-width: 1000px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* .footer-container .content-footer {
+    width: 100%;
+    max-width: 1200px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+} 
+
+.footer-container .content-footer .box a:hover {
+    color: #f2c640;
+}
+
+*/
