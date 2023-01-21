@@ -17,6 +17,9 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+
+/*Resolucion 320 en adelante*/
+
 .navbar {
     background-color: #84b6f4 !important;
     font-family: "Montserrat", sans-serif !important;
@@ -75,7 +78,7 @@ body {
 }
 
 .modal-header {
-    background-color: #84b6f4;
+    background-color: #61a2f2;
 }
 
 .modal-title {
@@ -83,48 +86,9 @@ body {
     font-size: 22px !important;
 }
 
-
-/* .inicio {
-    background-color: #ebf4ff;
-    margin: 0px;
-    padding: 90px;
+.btn-solicitar {
+    background-color: #61a2f2;
 }
-
-.inicio h2 {
-    font-size: 44px;
-}
-
-.inicio p {
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-.inicio h3 {
-    font-size: 30px;
-    font-style: italic;
-    margin-top: 30px;
-}
-
-.inicio img {
-    width: 350px;
-    height: auto;
-}
-
-.inicio-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.botonTurno {
-    margin-top: 80px;
-    margin-left: 260px;
-    padding: 10px;
-    background-color: #3da691;
-    border: 0;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 24px;
-} */
 
 .footer-container {
     width: 100%;
@@ -173,6 +137,49 @@ body {
     width: auto;
 }
 
+
+/*Fin resolucion 320 en adelante*/
+
+
+/*Resolucion 480 a 768*/
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .footer-container .content-footer {
+        width: 90%;
+        max-width: 1000px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .inicio img {
+        width: 400px;
+    }
+    .sonrisa_turnos {
+        margin: 40px;
+    }
+}
+
+
+/*Fin resolucion 480 a 768*/
+
+
+/*Resolucion 768 a 1024*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer-container .content-footer {
+        width: 95%;
+        max-width: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .inicio img {
+        width: 300px;
+    }
+}
+
+
+/*Fin resolucion 768 a 1024*/
+
+
+/*Resolucion 1024 en adelante*/
+
 @media only screen and (min-width: 1024px) {
     .footer-container .content-footer {
         width: 100%;
@@ -184,35 +191,13 @@ body {
     .footer-container .content-footer .box a:hover {
         color: #f2c640;
     }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .footer-container .content-footer {
-        width: 95%;
-        max-width: 1000px;
-        grid-template-columns: repeat(3, 1fr);
+    .inicio img {
+        width: 500px;
     }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-    .footer-container .content-footer {
-        width: 90%;
-        max-width: 1000px;
-        grid-template-columns: repeat(2, 1fr);
+    .sonrisa_turnos {
+        padding-left: 80px;
     }
 }
 
 
-/* .footer-container .content-footer {
-    width: 100%;
-    max-width: 1200px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-} 
-
-.footer-container .content-footer .box a:hover {
-    color: #f2c640;
-}
-
-*/
+/*Fin resolucion 1024 en adelante*/
