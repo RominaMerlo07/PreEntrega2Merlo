@@ -16,7 +16,6 @@
 <body>
 
     <header>
-
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="smylife"></a>
@@ -48,12 +47,10 @@
                 </div>
             </div>
         </nav>
-
     </header>
 
 
     <section class="inicio">
-
         <div class="row align-items-center">
             <div class="col">
                 <img class="sonrisa_turnos" src="./img/sonrisa_turnos.png" alt="sonrisa">
@@ -62,22 +59,11 @@
                 <h2 style="color: #1a3557">Consultorio Odontologico Smylife</h2>
                 <p>Te acompañamos en el proceso de tu salud bucal</p>
                 <h3>Tu sonrisa es nuestra pasión</h3>
-                <button type="button" class="btn btn-primary btn-lg botonTurno">Solicita tu turno</button>
+                <button type="button" class="btn btn-primary btn-lg botonTurno" data-bs-toggle="modal" data-bs-target="#modalTurno">
+                    Solicita tu turno
+                  </button>
             </div>
-            <!-- <div class="col">
-                One of three columns
-            </div> -->
         </div>
-        <!-- <div class="inicio-content">
-            <img src="./img/sonrisa_turnos.png" alt="sonrisa">
-            <div>
-                <h2 style="color: #1a3557">Consultorio Odontologico Smylife</h2>
-                <p>Te acompañamos en el proceso de tu salud bucal</p>
-                <h3>Tu sonrisa es nuestra pasión</h3>
-                <button class="botonTurno">Solicita tu turno</button>
-            </div>
-        </div> -->
-
     </section>
 
     <footer>
@@ -117,8 +103,64 @@
             </div>
         </footer>
 
-
-
+        <!-- Modal Turno-->
+        <div class="modal fade" id="modalTurno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTurnoLabel">Solicita tu turno</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputNombre" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="inputNombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputCelular" class="form-label">Celular</label>
+                                <input type="number" class="form-control" id="inputAddress" placeholder="Ej: 3515121314">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputConsulta" class="form-label">Seleccione tipo de consulta</label>
+                                <select id="inputConsulta" class="form-select">
+                                <option selected>Seleccione...</option>
+                                <option>Primer Consulta</option>
+                                <option>Ya soy paciente</option>
+                              </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputServicio" class="form-label">Seleccione Tratamiento/Servicio</label>
+                                <select id="inputServicio" class="form-select" disabled>
+                                <option selected>Seleccione...</option>
+                                <option>Endodoncia</option>
+                                <option>Estetica Dental</option>
+                                <option>Estomatologia</option>
+                                <option>Implantes Dentales</option>
+                                <option>Periodoncia</option>
+                                <option>Protesis Dentales</option>
+                                <option>Ortodoncia</option>
+                                <option>Otras</option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Solicitar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Modal turno-->
 </body>
 
 </html>

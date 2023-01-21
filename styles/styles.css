@@ -74,6 +74,15 @@ body {
     --font-weight: bold;
 }
 
+.modal-header {
+    background-color: #84b6f4;
+}
+
+.modal-title {
+    color: #fff;
+    font-size: 22px !important;
+}
+
 
 /* .inicio {
     background-color: #ebf4ff;
