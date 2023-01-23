@@ -1,0 +1,30 @@
+.nosotros {
+    background-color: #f4f6f8;
+    padding: 35px 30px;
+}
+
+.nosotros-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #143052;
+    padding-bottom: 5px;
+}
+
+.nosotros-info h3 {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #2171d1;
+    padding-bottom: 15px;
+}
+
+.nosotros-info h5 {
+    font-size: 24px !important;
+    color: #010408 !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.nosotros-info img {
+    height: 350px;
+}
