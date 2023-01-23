@@ -186,7 +186,7 @@ body {
         max-width: 1200px;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 50px;
-        padding: 45px 0px;
+        padding: 45px 15px;
     }
     .footer-container .content-footer .box a:hover {
         color: #f2c640;
