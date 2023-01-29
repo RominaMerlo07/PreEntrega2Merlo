@@ -21,7 +21,8 @@ body {
 /*Resolucion 320 en adelante*/
 
 .navbar {
-    background-color: #84b6f4 !important;
+    /* background-color: #84b6f4 !important; */
+    background-color: #4994f2!important;
     font-family: "Montserrat", sans-serif !important;
 }
 
@@ -155,6 +156,9 @@ body {
     .sonrisa_turnos {
         margin: 40px;
     }
+    .nosotros-info img {
+        height: 360px !important;
+    }
 }
 
 
@@ -196,9 +200,13 @@ body {
     }
     .inicio img {
         width: 500px;
+        height: 400px;
+    }
+    .content-inicio {
+        padding-top: 35px;
     }
     .sonrisa_turnos {
-        padding-left: 80px;
+        padding-left: 40px;
     }
     .nosotros-info img {
         height: 490px !important;
@@ -215,13 +223,20 @@ body {
 /*Fin resolucion 1024 en adelante*/
 
 @media only screen and (min-width: 1200px) {
+    .content-inicio {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .inicio-info {
+        padding-right: 90px;
+    }
     .nosotros-info img {
         height: 490px !important;
-        width: 1020px !important;
-        padding-left: 300px !important;
-        padding-right: 200px !important;
+        width: 1120px !important;
+        /* padding-left: 300px !important;
+        padding-right: 200px !important; */
     }
     .nosotros-info h5 {
-        padding-left: 45px !important;
+        padding-right: 30px !important;
     }
 }

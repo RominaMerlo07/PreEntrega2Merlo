@@ -1,6 +1,6 @@
 .nosotros {
     background-color: #f4f6f8;
-    padding: 35px 30px;
+    padding: 35px;
 }
 
 .nosotros-info h2 {
@@ -19,12 +19,19 @@
 }
 
 .nosotros-info h5 {
-    font-size: 24px !important;
+    font-size: 16px !important;
     color: #010408 !important;
     font-weight: bold;
     font-style: italic;
+    /* padding-top: 20px; */
 }
 
 .nosotros-info img {
     height: 250px;
+}
+
+.nosotros-info h6 {
+    font-size: 20px !important;
+    color: #010408 !important;
+    padding-top: 25px;
 }
