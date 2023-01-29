@@ -231,12 +231,12 @@ body {
         padding-right: 90px;
     }
     .nosotros-info img {
-        height: 490px !important;
-        width: 1120px !important;
-        /* padding-left: 300px !important;
-        padding-right: 200px !important; */
+        height: 390px !important;
+        width: 820px !important;
+        padding-right: 10px !important;
+        padding-left: 350px !important;
     }
-    .nosotros-info h5 {
-        padding-right: 30px !important;
-    }
+    /* .nosotros-info h5 {
+        padding-right: 50px !important;
+    } */
 }
