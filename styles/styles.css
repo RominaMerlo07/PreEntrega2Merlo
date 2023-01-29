@@ -23,13 +23,11 @@ body {
   background-color: #4994f2 !important;
   font-family: "Montserrat", sans-serif !important;
 }
-
 .navbar a {
   color: #fff !important;
   padding-left: 5px !important;
 }
-
-.navbar-brand img {
+.navbar .navbar-brand img {
   height: 70px;
   width: auto;
   transition: all 0.3s;
@@ -40,37 +38,31 @@ body {
 .inicio {
   background-color: #ebf4ff;
 }
-
-.sonrisa_turnos {
+.inicio .sonrisa_turnos {
   padding: 10px 30px;
   margin: 20px;
 }
-
-.inicio-info {
+.inicio .inicio-info {
   padding: 20px 25px;
   text-align: center;
 }
-
-.inicio-info h2 {
+.inicio .inicio-info h2 {
   font-size: 28px;
   font-weight: bold;
   color: #143052;
   padding-bottom: 5px;
 }
-
-.inicio-info p {
+.inicio .inicio-info p {
   font-size: 22px;
 }
-
-.inicio-info h3 {
+.inicio .inicio-info h3 {
   font-size: 24px;
   font-style: italic;
   font-weight: bold;
   color: #2171d1;
   padding-bottom: 15px;
 }
-
-.botonTurno {
+.inicio .inicio-info .botonTurno {
   background-color: #61a2f2 !important;
   font-size: 22px !important;
   --font-weight: bold;
@@ -93,7 +85,6 @@ body {
   width: 100%;
   background: #3f485b;
 }
-
 .footer-container .content-footer {
   width: 90%;
   max-width: 1200px;
@@ -103,34 +94,28 @@ body {
   grid-gap: 30px;
   padding: 35px 0px;
 }
-
 .footer-container .content-footer .box h2 {
   color: #84e9f4;
   margin-bottom: 25px;
   font-size: 18px;
 }
-
 .footer-container .content-footer .box p {
   color: #efefef;
   margin-bottom: 10px;
 }
-
 .footer-container .content-footer .box a {
   display: block;
   color: #ccc;
   font-size: 12px;
   padding: 5px 0;
 }
-
 .footer-container .content-footer .box .email_contacto {
   font-size: 16px;
 }
-
 .footer-container .content-footer .box .social-links {
   display: flex;
   flex-direction: row;
 }
-
 .footer-container .content-footer .box .social-links img {
   height: 50px;
   width: auto;
