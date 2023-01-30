@@ -188,6 +188,37 @@ body {
 /** Fin Servicios **/
 
 
+/** Coberturas **/
+
+.coberturas {
+    background-color: #f4f6f8;
+    padding: 35px 5px;
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #143052;
+        padding-bottom: 5px;
+    }
+    h3 {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+        color: #2171d1;
+        padding-bottom: 15px;
+    }
+    .abc {
+        background-color: #4a92e9;
+        color: #ebf4ff;
+    }
+    .info_os {
+        background-color: #d0dff1;
+    }
+}
+
+
+/** Fin Coberturas **/
+
+
 /* Footer */
 
 .footer-container {
@@ -256,6 +287,9 @@ body {
     .nosotros-info img {
         height: 360px !important;
     }
+    .coberturas p {
+        font-size: 20px;
+    }
 }
 
 
@@ -285,6 +319,16 @@ body {
     }
     .servicios {
         padding-bottom: 50px !important;
+    }
+    .coberturas p {
+        font-size: 20px;
+    }
+    .card_cobertura {
+        display: flex;
+        justify-content: center;
+    }
+    .coberturas_abc {
+        width: 400px;
     }
 }
 
@@ -339,6 +383,16 @@ body {
         padding-top: 3px;
         font-weight: bold;
     }
+    .coberturas p {
+        font-size: 24px;
+    }
+    .card_cobertura {
+        display: flex;
+        justify-content: center;
+    }
+    .coberturas_abc {
+        width: 400px;
+    }
 }
 
 
@@ -360,5 +414,15 @@ body {
     }
     .servicios-info h3 {
         font-size: 16px !important;
+    }
+    .coberturas p {
+        font-size: 26px;
+    }
+    .card_cobertura {
+        display: flex;
+        justify-content: center;
+    }
+    .coberturas_abc {
+        width: 500px;
     }
 }
