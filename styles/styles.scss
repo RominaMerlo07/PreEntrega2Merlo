@@ -219,6 +219,45 @@ body {
 /** Fin Coberturas **/
 
 
+/** Contacto **/
+
+.contacto {
+    padding: 30px 5px;
+    background-color: #ebf4ff;
+    img {
+        width: 50px;
+        height: 50px;
+        padding: 5px 0px;
+    }
+    .contacto-titulo {
+        h2 {
+            color: #143052;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 14px;
+            font-style: italic;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 20px;
+        }
+    }
+    .contacto-info {
+        margin: 0 10px;
+        ul {
+            list-style: none;
+        }
+        li {
+            font-size: 12px;
+        }
+    }
+}
+
+
+/** Fin Contacto **/
+
+
 /* Footer */
 
 .footer-container {
@@ -290,6 +329,9 @@ body {
     .coberturas p {
         font-size: 20px;
     }
+    .lista-contacto {
+        padding: 0px 90px;
+    }
 }
 
 
@@ -329,6 +371,14 @@ body {
     }
     .coberturas_abc {
         width: 400px;
+    }
+    .lista-contacto {
+        padding: 0px 200px;
+    }
+    .contacto-info {
+        li {
+            font-size: 16px !important;
+        }
     }
 }
 
@@ -393,6 +443,14 @@ body {
     .coberturas_abc {
         width: 400px;
     }
+    .lista-contacto {
+        padding: 0px 310px;
+    }
+    .contacto-info {
+        li {
+            font-size: 18px !important;
+        }
+    }
 }
 
 
@@ -424,5 +482,13 @@ body {
     }
     .coberturas_abc {
         width: 500px;
+    }
+    .lista-contacto {
+        padding: 0px 430px;
+    }
+    .contacto-info {
+        li {
+            font-size: 18px !important;
+        }
     }
 }
