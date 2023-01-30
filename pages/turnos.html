@@ -17,7 +17,68 @@
 
     <div id="info_header"></div>
 
-    <p>turnos</p>
+    <section class="container-fluid turnos">
+        <div class="text-center">
+            <div class="row turnos-info">
+                <div class="col-md-12">
+                    <h2>SOLICITA TU TURNO</h2>
+                </div>
+                <div class="col-md-12">
+                    <h3>Déjanos tus datos y nos pondremos en contacto para confirmar tu turno.</h3>
+                </div>
+            </div>
+            <div class="row turnos-info">
+                <div class="modal-content turnos_card">
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputNombre" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="inputNombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCelular" class="form-label">Celular</label>
+                                <input type="number" class="form-control" id="inputAddress" placeholder="Ej: 3515121314">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputConsulta" class="form-label">Seleccione tipo de consulta</label>
+                                <select id="inputConsulta" class="form-select">
+                                <option selected>Seleccione...</option>
+                                <option>Primer Consulta</option>
+                                <option>Ya soy paciente</option>
+                              </select>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputServicio" class="form-label">Seleccione Tratamiento/Servicio</label>
+                                <select id="inputServicio" class="form-select" disabled>
+                                <option selected>Seleccione...</option>
+                                <option>Endodoncia</option>
+                                <option>Estetica Dental</option>
+                                <option>Estomatologia</option>
+                                <option>Implantes Dentales</option>
+                                <option>Periodoncia</option>
+                                <option>Protesis Dentales</option>
+                                <option>Ortodoncia</option>
+                                <option>Otras</option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-primary me-md-2 btn-solicitar" type="button">Solicitar</button>
+                                <button class="btn btn-secondary" type="button">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div id="info_footer"></div>
 
     <script src="../js/header.js"></script>
