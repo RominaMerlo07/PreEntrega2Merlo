@@ -19,10 +19,159 @@ body {
 
 /*** Variables color ***/
 /*** Fin variables color ***/
+.nosotros {
+  background-color: #f4f6f8;
+  padding: 35px;
+}
+.nosotros h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #143052;
+  padding-bottom: 5px;
+}
+.nosotros h3 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  color: #2171d1;
+  padding-bottom: 15px;
+}
+.nosotros h5 {
+  font-size: 16px !important;
+  color: #010408 !important;
+  font-weight: bold;
+  font-style: italic;
+}
+.nosotros img {
+  height: 250px;
+}
+.nosotros h6 {
+  font-size: 20px !important;
+  color: #010408 !important;
+  padding-top: 25px;
+}
+
+.servicios {
+  padding: 30px 5px;
+  background-color: #ebf4ff;
+}
+.servicios p {
+  font-size: 12px;
+  padding-top: 3px;
+  font-weight: bold;
+}
+.servicios img {
+  width: 70px !important;
+  heigth: 70px !important;
+}
+.servicios .servicios-info h2 {
+  color: #143052;
+  font-weight: bold;
+}
+.servicios .servicios-info h3 {
+  font-size: 14px;
+  font-style: italic;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-gap: 20px 0px;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-item1 {
+  text-align: center;
+  width: 100px !important;
+  heigth: 100px !important;
+}
+
+.coberturas {
+  background-color: #f4f6f8;
+  padding: 35px 5px;
+}
+.coberturas h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #143052;
+  padding-bottom: 5px;
+}
+.coberturas h3 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  color: #2171d1;
+  padding-bottom: 15px;
+}
+.coberturas .abc {
+  background-color: #4a92e9;
+  color: #ebf4ff;
+}
+.coberturas .info_os {
+  background-color: #d0dff1;
+}
+
+.contacto {
+  padding: 30px 5px;
+  background-color: #ebf4ff;
+}
+.contacto img {
+  width: 50px !important;
+  heigth: 50px !important;
+  padding: 5px 0px;
+}
+.contacto .contacto-titulo h2 {
+  color: #143052;
+  font-weight: bold;
+}
+.contacto .contacto-titulo h3 {
+  font-size: 14px;
+  font-style: italic;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+}
+.contacto .contacto-info {
+  margin: 0 10px;
+}
+.contacto .contacto-info ul {
+  list-style: none;
+}
+.contacto .contacto-info li {
+  font-size: 12px;
+}
+
+.turnos {
+  background-color: #f4f6f8;
+  padding: 35px;
+}
+.turnos h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #143052;
+  padding-bottom: 5px;
+}
+.turnos h3 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  color: #2171d1;
+  padding-bottom: 15px;
+}
+.turnos .turnos_card {
+  background-color: #ffffff;
+  border: #61a2f2 solid 1px;
+}
+
 /*** Resolucion 320 en adelante ***/
 /* Navbar */
 .navbar {
-  /* background-color: #84b6f4 !important; */
   background-color: #4994f2 !important;
   font-family: "Montserrat", sans-serif !important;
 }
@@ -39,7 +188,7 @@ body {
 }
 
 /* Fin Navbar */
-/** Home **/
+/* Home */
 .inicio {
   background-color: #ebf4ff;
 }
@@ -87,167 +236,7 @@ body {
 }
 
 /* Fin Modal Turnos */
-/** Fin Home **/
-/** Nosotros **/
-.nosotros {
-  background-color: #f4f6f8;
-  padding: 35px;
-}
-.nosotros h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #143052;
-  padding-bottom: 5px;
-}
-.nosotros h3 {
-  font-size: 24px;
-  font-style: italic;
-  font-weight: bold;
-  color: #2171d1;
-  padding-bottom: 15px;
-}
-.nosotros h5 {
-  font-size: 16px !important;
-  color: #010408 !important;
-  font-weight: bold;
-  font-style: italic;
-}
-.nosotros img {
-  height: 250px;
-}
-.nosotros h6 {
-  font-size: 20px !important;
-  color: #010408 !important;
-  padding-top: 25px;
-}
-
-/** Fin Nosotros **/
-/** Servicios **/
-.servicios {
-  padding: 30px 5px;
-  background-color: #ebf4ff;
-}
-.servicios p {
-  font-size: 12px;
-  padding-top: 3px;
-  font-weight: bold;
-}
-.servicios img {
-  width: 70px !important;
-  heigth: 70px !important;
-}
-.servicios .servicios-info h2 {
-  color: #143052;
-  font-weight: bold;
-}
-.servicios .servicios-info h3 {
-  font-size: 14px;
-  font-style: italic;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 20px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
-  grid-gap: 20px 0px;
-  justify-items: center;
-  align-items: center;
-}
-
-.grid-item1 {
-  text-align: center;
-  width: 100px !important;
-  heigth: 100px !important;
-}
-
-/** Fin Servicios **/
-/** Coberturas **/
-.coberturas {
-  background-color: #f4f6f8;
-  padding: 35px 5px;
-}
-.coberturas h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #143052;
-  padding-bottom: 5px;
-}
-.coberturas h3 {
-  font-size: 24px;
-  font-style: italic;
-  font-weight: bold;
-  color: #2171d1;
-  padding-bottom: 15px;
-}
-.coberturas .abc {
-  background-color: #4a92e9;
-  color: #ebf4ff;
-}
-.coberturas .info_os {
-  background-color: #d0dff1;
-}
-
-/** Fin Coberturas **/
-/** Contacto **/
-.contacto {
-  padding: 30px 5px;
-  background-color: #ebf4ff;
-}
-.contacto img {
-  width: 50px !important;
-  heigth: 50px !important;
-  padding: 5px 0px;
-}
-.contacto .contacto-titulo h2 {
-  color: #143052;
-  font-weight: bold;
-}
-.contacto .contacto-titulo h3 {
-  font-size: 14px;
-  font-style: italic;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 20px;
-}
-.contacto .contacto-info {
-  margin: 0 10px;
-}
-.contacto .contacto-info ul {
-  list-style: none;
-}
-.contacto .contacto-info li {
-  font-size: 12px;
-}
-
-/** Fin Contacto **/
-/** Turnos **/
-.turnos {
-  background-color: #f4f6f8;
-  padding: 35px;
-}
-.turnos h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #143052;
-  padding-bottom: 5px;
-}
-.turnos h3 {
-  font-size: 24px;
-  font-style: italic;
-  font-weight: bold;
-  color: #2171d1;
-  padding-bottom: 15px;
-}
-.turnos .turnos_card {
-  background-color: #ffffff;
-  border: #61a2f2 solid 1px;
-}
-
-/** Fin Turnos **/
+/* Fin Home */
 /* Footer */
 .footer-container {
   width: 100%;

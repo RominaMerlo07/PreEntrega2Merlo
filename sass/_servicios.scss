@@ -1,0 +1,39 @@
+.servicios {
+    padding: 30px 5px;
+    background-color: $color-fondo_celeste;
+    p {
+        font-size: 12px;
+        padding-top: 3px;
+        font-weight: bold;
+    }
+    img {
+        @include tamaños(70px, 70px);
+    }
+    .servicios-info {
+        h2 {
+            color: $color-titulo_azul;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 14px;
+            font-style: italic;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-gap: 20px 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-item1 {
+    text-align: center;
+    @include tamaños(100px, 100px);
+}

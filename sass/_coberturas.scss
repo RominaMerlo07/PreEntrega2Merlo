@@ -1,0 +1,17 @@
+.coberturas {
+    background-color: $color-fondo_blanco;
+    padding: 35px 5px;
+    h2 {
+        @include estilos-h2;
+    }
+    h3 {
+        @include estilos-h3;
+    }
+    .abc {
+        background-color: #4a92e9;
+        color: #ebf4ff;
+    }
+    .info_os {
+        background-color: #d0dff1;
+    }
+}

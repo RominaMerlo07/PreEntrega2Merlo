@@ -1,0 +1,14 @@
+.turnos {
+    background-color: $color-fondo_blanco;
+    padding: 35px;
+    h2 {
+        @include estilos-h2;
+    }
+    h3 {
+        @include estilos-h3;
+    }
+    .turnos_card {
+        background-color: #ffffff;
+        border: $color-elementos_celeste solid 1px;
+    }
+}

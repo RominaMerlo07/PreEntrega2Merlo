@@ -1,57 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200;1,500&display=swap');
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-html,
-body {
-    font-family: "Montserrat", sans-serif;
-}
-
-body {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-}
-
-
-/*** Variables color ***/
-
-$color-fondo_celeste: #ebf4ff;
-$color-fondo_blanco: #f4f6f8;
-$color-titulo_azul: #143052;
-$color-subtitulo_celeste: #2171d1;
-$color-elementos_celeste: #61a2f2;
-
-/*** Fin variables color ***/
-
-@mixin estilos-h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: $color-titulo_azul;
-    padding-bottom: 5px;
-}
-
-@mixin estilos-h3 {
-    font-size: 24px;
-    font-style: italic;
-    font-weight: bold;
-    color: $color-subtitulo_celeste;
-    padding-bottom: 15px;
-}
-
-@mixin tamaños($width,
-$heigth) {
-    width: $width !important;
-    heigth: $heigth !important;
-}
-
-// @mixin estilo_font-sizes($valor) {
-//     font-size: $valor;
-// }
+@import "generales";
+@import "nosotros";
+@import "servicios";
+@import "coberturas";
+@import "contacto";
+@import "turnos";
 
 /*** Resolucion 320 en adelante ***/
 
@@ -59,7 +11,6 @@ $heigth) {
 /* Navbar */
 
 .navbar {
-    /* background-color: #84b6f4 !important; */
     background-color: #4994f2!important;
     font-family: "Montserrat", sans-serif !important;
     a {
@@ -79,7 +30,7 @@ $heigth) {
 /* Fin Navbar */
 
 
-/** Home **/
+/* Home */
 
 .inicio {
     background-color: $color-fondo_celeste;
@@ -126,170 +77,7 @@ $heigth) {
 /* Fin Modal Turnos */
 
 
-/** Fin Home **/
-
-
-/** Nosotros **/
-
-.nosotros {
-    background-color: $color-fondo_blanco;
-    padding: 35px;
-    h2 {
-        @include estilos-h2;
-    }
-    h3 {
-        @include estilos-h3;
-    }
-    h5 {
-        font-size: 16px !important;
-        color: #010408 !important;
-        font-weight: bold;
-        font-style: italic;
-    }
-    img {
-        height: 250px;
-    }
-    h6 {
-        font-size: 20px !important;
-        color: #010408 !important;
-        padding-top: 25px;
-    }
-}
-
-
-/** Fin Nosotros **/
-
-
-/** Servicios **/
-
-.servicios {
-    padding: 30px 5px;
-    background-color: $color-fondo_celeste;
-    p {
-        font-size: 12px;
-        padding-top: 3px;
-        font-weight: bold;
-    }
-    img {
-        @include tamaños(70px,
-        70px);
-    }
-    .servicios-info {
-        h2 {
-            color: $color-titulo_azul;
-            font-weight: bold;
-        }
-        h3 {
-            font-size: 14px;
-            font-style: italic;
-            padding-top: 10px;
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-bottom: 20px;
-        }
-    }
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-gap: 20px 0px;
-    justify-items: center;
-    align-items: center;
-}
-
-.grid-item1 {
-    text-align: center;
-    @include tamaños(100px,
-    100px);
-}
-
-
-/** Fin Servicios **/
-
-
-/** Coberturas **/
-
-.coberturas {
-    background-color: $color-fondo_blanco;
-    padding: 35px 5px;
-    h2 {
-        @include estilos-h2;
-    }
-    h3 {
-        @include estilos-h3;
-    }
-    .abc {
-        background-color: #4a92e9;
-        color: #ebf4ff;
-    }
-    .info_os {
-        background-color: #d0dff1;
-    }
-}
-
-
-/** Fin Coberturas **/
-
-
-/** Contacto **/
-
-.contacto {
-    padding: 30px 5px;
-    background-color: $color-fondo_celeste;
-    img {
-        @include tamaños(50px,
-        50px);
-        padding: 5px 0px;
-    }
-    .contacto-titulo {
-        h2 {
-            color: $color-titulo_azul;
-            font-weight: bold;
-        }
-        h3 {
-            font-size: 14px;
-            font-style: italic;
-            padding-top: 10px;
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-bottom: 20px;
-        }
-    }
-    .contacto-info {
-        margin: 0 10px;
-        ul {
-            list-style: none;
-        }
-        li {
-            font-size: 12px;
-        }
-    }
-}
-
-
-/** Fin Contacto **/
-
-
-/** Turnos **/
-
-.turnos {
-    background-color: $color-fondo_blanco;
-    padding: 35px;
-    h2 {
-        @include estilos-h2;
-    }
-    h3 {
-        @include estilos-h3;
-    }
-    .turnos_card {
-        background-color: #ffffff;
-        border: $color-elementos_celeste solid 1px;
-    }
-}
-
-
-/** Fin Turnos **/
+/* Fin Home */
 
 
 /* Footer */
@@ -387,8 +175,7 @@ $heigth) {
         height: 590px !important;
     }
     .servicios img {
-        @include tamaños(100px,
-        100px);
+        @include tamaños(100px, 100px);
     }
     .grid-container {
         grid-gap: 30px 5px;
@@ -434,8 +221,7 @@ $heigth) {
         color: #f2c640;
     }
     .inicio img {
-        @include tamaños(500px,
-        400px);
+        @include tamaños(500px, 400px);
         // width: 500px;
         // height: 400px;
     }
@@ -456,8 +242,7 @@ $heigth) {
         padding-left: 45px !important;
     }
     .servicios img {
-        @include tamaños(100px,
-        100px);
+        @include tamaños(100px, 100px);
     }
     .grid-container {
         grid-gap: 50px 5px !important;
