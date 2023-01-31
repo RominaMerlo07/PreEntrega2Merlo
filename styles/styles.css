@@ -176,6 +176,30 @@ body {
   border: #61a2f2 solid 1px;
 }
 
+.novedades {
+  background-color: #f4f6f8;
+  padding: 20px 10px;
+}
+.novedades h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #143052;
+  padding-bottom: 5px;
+}
+.novedades h3 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  color: #2171d1;
+  padding-bottom: 15px;
+}
+.novedades .novedades-info-card {
+  padding: 5px 7px;
+}
+.novedades .card-images {
+  padding-top: 10px;
+}
+
 /*** Resolucion 320 en adelante ***/
 /* Navbar */
 .navbar {
@@ -309,6 +333,9 @@ body {
   .lista-contacto {
     padding: 0px 90px;
   }
+  .card {
+    width: 28rem !important;
+  }
 }
 /*** Fin resolucion 480 a 768 ***/
 /*** Resolucion 768 a 1024 ***/
@@ -352,6 +379,13 @@ body {
   }
   .turnos-info {
     margin: 20px 40px;
+  }
+  .card {
+    width: 14rem !important;
+  }
+  .card-images {
+    display: flex;
+    justify-content: center;
   }
 }
 /*** Fin resolucion 768 a 1024 ***/
@@ -458,5 +492,9 @@ body {
   }
   .turnos-info {
     margin: 20px 80px;
+  }
+  .card-images {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */

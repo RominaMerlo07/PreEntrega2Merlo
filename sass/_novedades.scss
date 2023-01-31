@@ -1,0 +1,16 @@
+.novedades {
+    background-color: $color-fondo_blanco;
+    padding: 20px 10px;
+    h2 {
+        @include estilos-h2;
+    }
+    h3 {
+        @include estilos-h3;
+    }
+    .novedades-info-card {
+        padding: 5px 7px;
+    }
+    .card-images {
+        padding-top: 10px;
+    }
+}
