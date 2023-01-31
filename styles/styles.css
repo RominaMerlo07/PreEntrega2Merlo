@@ -343,6 +343,9 @@ body {
   .contacto-info li {
     font-size: 16px !important;
   }
+  .turnos-info {
+    margin: 20px 40px;
+  }
 }
 /*** Fin resolucion 768 a 1024 ***/
 /*** Resolucion 1024 en adelante ***/
@@ -408,6 +411,9 @@ body {
   .contacto-info li {
     font-size: 18px !important;
   }
+  .turnos-info {
+    margin: 20px 60px;
+  }
 }
 /*** Fin resolucion 1024 en adelante ***/
 @media only screen and (min-width: 1200px) {
@@ -442,5 +448,8 @@ body {
   }
   .contacto-info li {
     font-size: 18px !important;
+  }
+  .turnos-info {
+    margin: 20px 80px;
   }
 }/*# sourceMappingURL=styles.css.map */
