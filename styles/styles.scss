@@ -18,6 +18,41 @@ body {
 }
 
 
+/*** Variables color ***/
+
+$color-fondo_celeste: #ebf4ff;
+$color-fondo_blanco: #f4f6f8;
+$color-titulo_azul: #143052;
+$color-subtitulo_celeste: #2171d1;
+$color-elementos_celeste: #61a2f2;
+
+/*** Fin variables color ***/
+
+@mixin estilos-h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: $color-titulo_azul;
+    padding-bottom: 5px;
+}
+
+@mixin estilos-h3 {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: $color-subtitulo_celeste;
+    padding-bottom: 15px;
+}
+
+@mixin tamaños($width,
+$heigth) {
+    width: $width !important;
+    heigth: $heigth !important;
+}
+
+// @mixin estilo_font-sizes($valor) {
+//     font-size: $valor;
+// }
+
 /*** Resolucion 320 en adelante ***/
 
 
@@ -47,7 +82,7 @@ body {
 /** Home **/
 
 .inicio {
-    background-color: #ebf4ff;
+    background-color: $color-fondo_celeste;
     .sonrisa_turnos {
         padding: 10px 30px;
         margin: 20px;
@@ -56,25 +91,17 @@ body {
         padding: 20px 25px;
         text-align: center;
         h2 {
-            font-size: 28px;
-            font-weight: bold;
-            color: #143052;
-            padding-bottom: 5px;
+            @include estilos-h2;
         }
         p {
             font-size: 22px;
         }
         h3 {
-            font-size: 24px;
-            font-style: italic;
-            font-weight: bold;
-            color: #2171d1;
-            padding-bottom: 15px;
+            @include estilos-h3;
         }
         .botonTurno {
-            background-color: #61a2f2 !important;
+            background-color: $color-elementos_celeste !important;
             font-size: 22px !important;
-            --font-weight: bold;
         }
     }
 }
@@ -83,7 +110,7 @@ body {
 /* Modal Turnos */
 
 .modal-header {
-    background-color: #61a2f2;
+    background-color: $color-elementos_celeste;
 }
 
 .modal-title {
@@ -92,7 +119,7 @@ body {
 }
 
 .btn-solicitar {
-    background-color: #61a2f2;
+    background-color: $color-elementos_celeste;
 }
 
 
@@ -105,20 +132,13 @@ body {
 /** Nosotros **/
 
 .nosotros {
-    background-color: #f4f6f8;
+    background-color: $color-fondo_blanco;
     padding: 35px;
     h2 {
-        font-size: 28px;
-        font-weight: bold;
-        color: #143052;
-        padding-bottom: 5px;
+        @include estilos-h2;
     }
     h3 {
-        font-size: 24px;
-        font-style: italic;
-        font-weight: bold;
-        color: #2171d1;
-        padding-bottom: 15px;
+        @include estilos-h3;
     }
     h5 {
         font-size: 16px !important;
@@ -144,19 +164,19 @@ body {
 
 .servicios {
     padding: 30px 5px;
-    background-color: #ebf4ff;
+    background-color: $color-fondo_celeste;
     p {
         font-size: 12px;
         padding-top: 3px;
         font-weight: bold;
     }
     img {
-        width: 70px;
-        height: 70px;
+        @include tamaños(70px,
+        70px);
     }
     .servicios-info {
         h2 {
-            color: #143052;
+            color: $color-titulo_azul;
             font-weight: bold;
         }
         h3 {
@@ -180,8 +200,8 @@ body {
 
 .grid-item1 {
     text-align: center;
-    width: 100px;
-    height: 100px;
+    @include tamaños(100px,
+    100px);
 }
 
 
@@ -191,20 +211,13 @@ body {
 /** Coberturas **/
 
 .coberturas {
-    background-color: #f4f6f8;
+    background-color: $color-fondo_blanco;
     padding: 35px 5px;
     h2 {
-        font-size: 28px;
-        font-weight: bold;
-        color: #143052;
-        padding-bottom: 5px;
+        @include estilos-h2;
     }
     h3 {
-        font-size: 24px;
-        font-style: italic;
-        font-weight: bold;
-        color: #2171d1;
-        padding-bottom: 15px;
+        @include estilos-h3;
     }
     .abc {
         background-color: #4a92e9;
@@ -223,15 +236,15 @@ body {
 
 .contacto {
     padding: 30px 5px;
-    background-color: #ebf4ff;
+    background-color: $color-fondo_celeste;
     img {
-        width: 50px;
-        height: 50px;
+        @include tamaños(50px,
+        50px);
         padding: 5px 0px;
     }
     .contacto-titulo {
         h2 {
-            color: #143052;
+            color: $color-titulo_azul;
             font-weight: bold;
         }
         h3 {
@@ -261,24 +274,17 @@ body {
 /** Turnos **/
 
 .turnos {
-    background-color: #f4f6f8;
+    background-color: $color-fondo_blanco;
     padding: 35px;
     h2 {
-        font-size: 28px;
-        font-weight: bold;
-        color: #143052;
-        padding-bottom: 5px;
+        @include estilos-h2;
     }
     h3 {
-        font-size: 24px;
-        font-style: italic;
-        font-weight: bold;
-        color: #2171d1;
-        padding-bottom: 15px;
+        @include estilos-h3;
     }
     .turnos_card {
         background-color: #ffffff;
-        border: #6c9ad3 solid 1px;
+        border: $color-elementos_celeste solid 1px;
     }
 }
 
@@ -381,8 +387,8 @@ body {
         height: 590px !important;
     }
     .servicios img {
-        width: 100px !important;
-        height: 100px !important;
+        @include tamaños(100px,
+        100px);
     }
     .grid-container {
         grid-gap: 30px 5px;
@@ -428,11 +434,14 @@ body {
         color: #f2c640;
     }
     .inicio img {
-        width: 500px;
-        height: 400px;
+        @include tamaños(500px,
+        400px);
+        // width: 500px;
+        // height: 400px;
     }
     .content-inicio {
         padding-top: 35px;
+        padding-bottom: 20px;
     }
     .sonrisa_turnos {
         padding-left: 40px;
@@ -447,8 +456,8 @@ body {
         padding-left: 45px !important;
     }
     .servicios img {
-        width: 100px !important;
-        height: 100px !important;
+        @include tamaños(100px,
+        100px);
     }
     .grid-container {
         grid-gap: 50px 5px !important;
@@ -496,13 +505,13 @@ body {
         height: 390px !important;
         width: 820px !important;
         padding-right: 10px !important;
-        padding-left: 350px !important;
+        padding-left: 400px !important;
     }
     .servicios-info h3 {
-        font-size: 16px !important;
+        font-size: 18px !important;
     }
     .coberturas p {
-        font-size: 26px;
+        font-size: 22px;
     }
     .card_cobertura {
         display: flex;

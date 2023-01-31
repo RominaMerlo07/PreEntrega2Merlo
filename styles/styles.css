@@ -17,6 +17,8 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+/*** Variables color ***/
+/*** Fin variables color ***/
 /*** Resolucion 320 en adelante ***/
 /* Navbar */
 .navbar {
@@ -68,7 +70,6 @@ body {
 .inicio .inicio-info .botonTurno {
   background-color: #61a2f2 !important;
   font-size: 22px !important;
-  --font-weight: bold;
 }
 
 /* Modal Turnos */
@@ -132,8 +133,8 @@ body {
   font-weight: bold;
 }
 .servicios img {
-  width: 70px;
-  height: 70px;
+  width: 70px !important;
+  heigth: 70px !important;
 }
 .servicios .servicios-info h2 {
   color: #143052;
@@ -158,8 +159,8 @@ body {
 
 .grid-item1 {
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 100px !important;
+  heigth: 100px !important;
 }
 
 /** Fin Servicios **/
@@ -196,8 +197,8 @@ body {
   background-color: #ebf4ff;
 }
 .contacto img {
-  width: 50px;
-  height: 50px;
+  width: 50px !important;
+  heigth: 50px !important;
   padding: 5px 0px;
 }
 .contacto .contacto-titulo h2 {
@@ -243,7 +244,7 @@ body {
 }
 .turnos .turnos_card {
   background-color: #ffffff;
-  border: #6c9ad3 solid 1px;
+  border: #61a2f2 solid 1px;
 }
 
 /** Fin Turnos **/
@@ -329,7 +330,7 @@ body {
   }
   .servicios img {
     width: 100px !important;
-    height: 100px !important;
+    heigth: 100px !important;
   }
   .grid-container {
     grid-gap: 30px 5px;
@@ -368,11 +369,12 @@ body {
     color: #f2c640;
   }
   .inicio img {
-    width: 500px;
-    height: 400px;
+    width: 500px !important;
+    heigth: 400px !important;
   }
   .content-inicio {
     padding-top: 35px;
+    padding-bottom: 20px;
   }
   .sonrisa_turnos {
     padding-left: 40px;
@@ -388,7 +390,7 @@ body {
   }
   .servicios img {
     width: 100px !important;
-    height: 100px !important;
+    heigth: 100px !important;
   }
   .grid-container {
     grid-gap: 50px 5px !important;
@@ -431,13 +433,13 @@ body {
     height: 390px !important;
     width: 820px !important;
     padding-right: 10px !important;
-    padding-left: 350px !important;
+    padding-left: 400px !important;
   }
   .servicios-info h3 {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .coberturas p {
-    font-size: 26px;
+    font-size: 22px;
   }
   .card_cobertura {
     display: flex;
