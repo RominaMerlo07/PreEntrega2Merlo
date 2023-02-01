@@ -134,7 +134,7 @@
 
 /*** Resolucion 480 a 768 ***/
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .footer-container .content-footer {
         width: 90%;
         max-width: 1000px;
@@ -155,9 +155,6 @@
     .lista-contacto {
         padding: 0px 90px;
     }
-    .card {
-        width: 28rem !important;
-    }
 }
 
 
@@ -166,7 +163,7 @@
 
 /*** Resolucion 768 a 1024 ***/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .footer-container .content-footer {
         width: 95%;
         max-width: 1000px;
@@ -208,13 +205,6 @@
     .turnos-info {
         margin: 20px 40px;
     }
-    .card {
-        width: 14rem !important;
-    }
-    .card-images {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 
@@ -223,7 +213,7 @@
 
 /*** Resolucion 1024 en adelante ***/
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1025px) {
     .footer-container .content-footer {
         width: 100%;
         max-width: 1200px;
@@ -236,8 +226,6 @@
     }
     .inicio img {
         @include tamaños(500px, 400px);
-        // width: 500px;
-        // height: 400px;
     }
     .content-inicio {
         padding-top: 35px;
@@ -295,7 +283,7 @@
 
 /*** Fin resolucion 1024 en adelante ***/
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .content-inicio {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -332,9 +320,5 @@
     }
     .turnos-info {
         margin: 20px 80px;
-    }
-    .card-images {
-        display: flex;
-        justify-content: center;
     }
 }
