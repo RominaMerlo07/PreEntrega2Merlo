@@ -177,8 +177,8 @@ body {
 }
 
 .novedades {
-  background-color: #f4f6f8;
-  padding: 20px;
+  background-color: #ebf4ff;
+  padding: 5px;
 }
 .novedades h2 {
   font-size: 28px;
@@ -442,10 +442,11 @@ body {
 @media (min-width: 1200px) {
   .content-inicio {
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
   .inicio-info {
-    padding-right: 90px;
+    padding-right: 90px !important;
+    padding-left: 70px !important;
   }
   .nosotros-info img {
     height: 390px !important;

@@ -286,10 +286,11 @@
 @media (min-width: 1200px) {
     .content-inicio {
         padding-top: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
     .inicio-info {
-        padding-right: 90px;
+        padding-right: 90px !important;
+        padding-left: 70px !important;
     }
     .nosotros-info img {
         height: 390px !important;
