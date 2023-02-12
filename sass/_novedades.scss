@@ -8,3 +8,21 @@
         @include estilos-h3;
     }
 }
+
+.card {
+    .btn-ver-mas {
+        display: none;
+    }
+}
+
+.card:hover {
+    img {
+        opacity: 0.3;
+    }
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px -5px rgba(10, 16, 34, 0.2);
+    background: #e3e1e1;
+    .btn-ver-mas {
+        display: block;
+    }
+}

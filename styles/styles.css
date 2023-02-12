@@ -201,7 +201,25 @@ body {
   font-weight: bold;
   color: #2171d1;
   padding-bottom: 15px;
-} /*** Resolucion 320 en adelante ***/
+}
+
+.card .btn-ver-mas {
+  display: none;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px -5px rgba(10, 16, 34, 0.2);
+  background: #e3e1e1;
+}
+.card:hover img {
+  opacity: 0.3;
+}
+.card:hover .btn-ver-mas {
+  display: block;
+}
+
+/*** Resolucion 320 en adelante ***/
 /* Navbar */
 .navbar {
   background-color: #4994f2 !important;
