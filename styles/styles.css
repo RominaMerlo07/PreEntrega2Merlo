@@ -178,7 +178,7 @@ body {
 
 .novedades {
   background-color: #f4f6f8;
-  padding: 20px 10px;
+  padding: 20px;
 }
 .novedades h2 {
   font-size: 28px;
@@ -192,15 +192,7 @@ body {
   font-weight: bold;
   color: #2171d1;
   padding-bottom: 15px;
-}
-.novedades .novedades-info-card {
-  padding: 5px 5px;
-}
-.novedades .card-images {
-  padding-top: 10px;
-}
-
-/*** Resolucion 320 en adelante ***/
+} /*** Resolucion 320 en adelante ***/
 /* Navbar */
 .navbar {
   background-color: #4994f2 !important;
@@ -312,7 +304,7 @@ body {
 /* Fin Footer */
 /*** Fin resolucion 320 en adelante ***/
 /*** Resolucion 480 a 768 ***/
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .footer-container .content-footer {
     width: 90%;
     max-width: 1000px;
@@ -333,13 +325,10 @@ body {
   .lista-contacto {
     padding: 0px 90px;
   }
-  .card {
-    width: 28rem !important;
-  }
 }
 /*** Fin resolucion 480 a 768 ***/
 /*** Resolucion 768 a 1024 ***/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .footer-container .content-footer {
     width: 95%;
     max-width: 1000px;
@@ -380,17 +369,10 @@ body {
   .turnos-info {
     margin: 20px 40px;
   }
-  .card {
-    width: 14rem !important;
-  }
-  .card-images {
-    display: flex;
-    justify-content: center;
-  }
 }
 /*** Fin resolucion 768 a 1024 ***/
 /*** Resolucion 1024 en adelante ***/
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1025px) {
   .footer-container .content-footer {
     width: 100%;
     max-width: 1200px;
@@ -457,9 +439,9 @@ body {
   }
 }
 /*** Fin resolucion 1024 en adelante ***/
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .content-inicio {
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
   }
   .inicio-info {
@@ -492,9 +474,5 @@ body {
   }
   .turnos-info {
     margin: 20px 80px;
-  }
-  .card-images {
-    display: flex;
-    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */
