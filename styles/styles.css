@@ -108,12 +108,18 @@ body {
   color: #2171d1;
   padding-bottom: 15px;
 }
+.coberturas p {
+  font-size: 18px;
+}
 .coberturas .abc {
   background-color: #4a92e9;
   color: #ebf4ff;
 }
 .coberturas .info_os {
   background-color: #d0dff1;
+}
+.coberturas .card_cobertura {
+  padding: 0px 20px;
 }
 
 .contacto {
@@ -135,6 +141,9 @@ body {
   font-weight: bold;
   color: #2171d1;
   padding-bottom: 15px;
+}
+.contacto .contacto-titulo .instalaciones {
+  font-size: 16px;
 }
 .contacto .contacto-titulo p {
   font-size: 14px;
@@ -454,6 +463,12 @@ body {
     padding-right: 10px !important;
     padding-left: 400px !important;
   }
+  #carouselExampleDark {
+    padding: 10px 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
   .servicios-info h3 {
     font-size: 18px !important;
   }
@@ -470,8 +485,14 @@ body {
   .lista-contacto {
     padding: 0px 430px;
   }
+  .contacto-info {
+    padding: 0px 30px !important;
+  }
   .contacto-info li {
     font-size: 18px !important;
+  }
+  .contacto-titulo {
+    padding: 0px 30px !important;
   }
   .turnos-info {
     margin: 20px 80px;

@@ -7,11 +7,17 @@
     h3 {
         @include estilos-h3;
     }
+    p {
+        font-size: 18px;
+    }
     .abc {
         background-color: #4a92e9;
         color: #ebf4ff;
     }
     .info_os {
         background-color: #d0dff1;
+    }
+    .card_cobertura {
+        padding: 0px 20px;
     }
 }
